@@ -1,1 +1,12 @@
 <h1>File Upload</h1>
+
+<form enctype="multipart/form-data" action="/" method="POST">
+  <input type="file" name="myFile">
+  <input type="submit">
+</form>
+
+<% if (typeof url === 'string' && url) { %>
+    <img src="<%= url %>">
+<%} else { %>
+    <p>Please upload something yo</p>
+<% } %> 
